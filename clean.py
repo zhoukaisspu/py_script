@@ -22,11 +22,7 @@ suffix = ('.txt',
         '')
 
 def _getDirs(path='.'):
-    dirs = os.listdir(path)
-    index = 0
-    for i in dirs:
-        dirs[index] = os.path.join(path,i)
-        index = index + 1
+    dirs =[os.path.join(path,x) for x in os.listdir(path)]
     return dirs
 
 def _containExt(ext):
