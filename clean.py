@@ -18,8 +18,7 @@ suffix = ('.txt',
         '.suo',
         '.obj',
         '.lastbuildstate',
-        '.idb',
-        '')
+        '.idb')
 
 def _getDirs(path='.'):
     dirs =[os.path.join(path,x) for x in os.listdir(path)]
