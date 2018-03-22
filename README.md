@@ -7,4 +7,5 @@ For me, I just make study serve the practical purpose.
 
 | script name | purpose|
 |-------------|--------|
-|clean.py     | remove the temporary files and directory from 'vs2017' project
+|clean.py     | remove the temporary files and directory from 'vs2017' project|
+|compare.py | compare the contents of two files in binary form|
