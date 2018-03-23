@@ -5,20 +5,10 @@ import sys
 modelPath="model.bin"
 flashPath="flash.bin"
 def compareFile(srcFile,destFile):
-    try:
-        src = open(srcFile,"rb")
-    except OSError as e:
-        print("except:",e)
-        return
-    srcData = src.read()
-    src.close()
-    try:
-        dest = open(destFile,"rb")
-    except OSError as e:
-        print('except:',e)
-        return 
-    destData = dest.read()
-    dest.close()
+    with open(srcFile,"rb") as src:
+        srcData = src.read()
+    with open(destFile,"rb") as dest:
+        destData = dest.read()
     checked = False
     if(len(srcData)!=len(destData)):
         print("It unequal between ",srcFile,destFile,". The file size is different")
