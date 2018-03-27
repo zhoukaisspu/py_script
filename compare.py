@@ -2,8 +2,6 @@
 # compare contents of two files in binary form
 import sys
 
-modelPath="model.bin"
-flashPath="flash.bin"
 def compareFile(srcFile,destFile):
     with open(srcFile,"rb") as src:
         srcData = src.read()
